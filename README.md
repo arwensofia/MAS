@@ -1,2 +1,0 @@
-# MAS
-MAS Shipwreck Project
