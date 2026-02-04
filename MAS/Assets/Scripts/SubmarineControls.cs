@@ -48,12 +48,18 @@ public class SubmarineControls : MonoBehaviour
         Vector3 force = transform.forward * _moveInput.y * _moveSpeed;
         _rb.AddForce(force, ForceMode.Acceleration);
 
-        // 2. Turning
-        // Using A and D input for turning in X -axis
 
-        float turn = _moveInput.x * _turnSpeed * Time.fixedDeltaTime;
-        Quaternion turnRotation = Quaternion.Euler(0f, turn, 0f);
-        _rb.MoveRotation(_rb.rotation * turnRotation);
+        // 2. Handle Turning
+        // Instead of setting rotation, we apply rotational force (Torque)
+        // We rotate around the submarine's UP axis
+
+        Vector3 turnForce = transform.up * _moveInput.x * _turnSpeed;
+        _rb.AddTorque(turnForce, ForceMode.Acceleration);
+
+        // This is the old script
+        // float turn = _moveInput.x * _turnSpeed * Time.fixedDeltaTime;
+        // Quaternion turnRotation = Quaternion.Euler(0f, turn, 0f);
+        // _rb.MoveRotation(_rb.rotation * turnRotation);
 
     }
 
