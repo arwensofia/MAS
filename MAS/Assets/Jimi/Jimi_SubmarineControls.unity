@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &64838431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1441,6 +1441,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3220512463574085503
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 590434691130332567, guid: d0598946ec949d44c8e0b89213d85a40, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.6627
+      objectReference: {fileID: 0}
+    - target: {fileID: 590434691130332567, guid: d0598946ec949d44c8e0b89213d85a40, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 590434691130332567, guid: d0598946ec949d44c8e0b89213d85a40, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.2087
+      objectReference: {fileID: 0}
+    - target: {fileID: 590434691130332567, guid: d0598946ec949d44c8e0b89213d85a40, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 590434691130332567, guid: d0598946ec949d44c8e0b89213d85a40, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 590434691130332567, guid: d0598946ec949d44c8e0b89213d85a40, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 590434691130332567, guid: d0598946ec949d44c8e0b89213d85a40, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 590434691130332567, guid: d0598946ec949d44c8e0b89213d85a40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 590434691130332567, guid: d0598946ec949d44c8e0b89213d85a40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 590434691130332567, guid: d0598946ec949d44c8e0b89213d85a40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285448673538924160, guid: d0598946ec949d44c8e0b89213d85a40, type: 3}
+      propertyPath: m_Name
+      value: Submarine_FIX
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0598946ec949d44c8e0b89213d85a40, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1455,3 +1512,4 @@ SceneRoots:
   - {fileID: 906422756}
   - {fileID: 538790291}
   - {fileID: 125754728}
+  - {fileID: 3220512463574085503}
