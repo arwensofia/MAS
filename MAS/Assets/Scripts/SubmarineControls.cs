@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(UDPReciever))] // The reciever is attached?
 
 public class SubmarineControls : MonoBehaviour
 {
@@ -11,32 +12,39 @@ public class SubmarineControls : MonoBehaviour
     public float _turnSpeed = 50f;
 
     private Rigidbody _rb;
-    private SubmarineControllers _controls;
+    private UDPReciever _udpReciever; // The new system
+    //Old system
+    //private SubmarineControllers _controls;
     private Vector2 _moveInput;
 
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
-        _controls = new SubmarineControllers();
+        _udpReciever = GetComponent<UDPReciever>();
+
+        //The old system
+        //_controls = new SubmarineControllers();
     }
 
-    private void OnEnable()
-    {
+    //private void OnEnable()
+    //{
         // Turn on controls
-        _controls.Player.Enable();
-    }
+       // _controls.Player.Enable();
+    //}
 
-    private void OnDisable()
-    {
+    //private void OnDisable()
+    //{
         // Turn off controls
-        _controls.Player.Disable();
-    }
+       // _controls.Player.Disable();
+    //}
 
     void Update()
     {
-        // Read the axis values (W and S = Y axis, A and D = X axis)
-        _moveInput = _controls.Player.Move.ReadValue<Vector2>();
+        _moveInput = _udpReciever.NetworkInput;
+        
+        // Read the axis values (W and S = Y axis, A and D = X axis) Old system
+        //_moveInput = _controls.Player.Move.ReadValue<Vector2>();
     }
 
     private void FixedUpdate()
