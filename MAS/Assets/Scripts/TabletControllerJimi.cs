@@ -10,7 +10,7 @@ using System.Linq.Expressions;
 public class TabletControllerJimi : MonoBehaviour
 {
     [Header("Network Settings")]
-    public string _pcIPAddress = "10.72.33.139"; //10.227.4.197 <- the other ip
+    public string _pcIPAddress = "255.255.255.255"; //10.227.4.197 <- the other ip
     public int _port = 5000;
 
     [Header("UI")]
@@ -23,6 +23,7 @@ public class TabletControllerJimi : MonoBehaviour
     {
         _controls = new SubmarineControllers();
         _udpClient = new UdpClient();
+        _udpClient.EnableBroadcast = true; // Allow tablet to shout to the whole network
     }
 
     private void OnEnable()
@@ -40,18 +41,20 @@ public class TabletControllerJimi : MonoBehaviour
     {
         Vector2 moveInput = _controls.Player.Move.ReadValue<Vector2>();
 
+        //moveInput = _controls.Player.Move.ReadValue<Vector2>();
+
         string message = $"{moveInput.x}, {moveInput.y}";
         byte[] data = Encoding.UTF8.GetBytes(message);
 
         try
         {
             // Try to send the control data
-            _udpClient.Send(data, data.Length, _pcIPAddress, _port);
+            _udpClient.Send(data, data.Length, "255.255.255.255", _port);
 
             // If successful, update the UI
             if (_debugText != null)
             {
-                _debugText.text = $"Target IP: {_pcIPAddress}\nSending: X:{moveInput.x:F2} Y:{moveInput.y:F2}";
+                _debugText.text = $"Broadcasting...\nSending: X:{moveInput.x:F2} Y:{moveInput.y:F2}";
             }
         }
         catch (Exception e)
@@ -59,7 +62,7 @@ public class TabletControllerJimi : MonoBehaviour
             // If Android blocks it or the network fails, print the error
             if (_debugText != null)
             {
-                _debugText.text = $"Network Error:\n{e.Message}";
+                _debugText.text = $"Error:\n{e.Message}";
             }
         }
         

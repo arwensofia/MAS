@@ -12,5 +12,5 @@ EditorBuildSettings:
     path: Assets/Reetta/canvas2.unity
     guid: 9e89e73985902b84a946b345148ee887
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 83c330d29438b63479a475133ad99ae0, type: 3}
   m_UseUCBPForAssetBundles: 0
