@@ -631,7 +631,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1127692306}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
         m_MethodName: ResetScene
         m_Mode: 1
@@ -2417,7 +2417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7111d5a5b3343b4d8af4ed2e223b7d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TabletControllerJimi
-  _pcIPAddress: 10.72.33.139
+  _pcIPAddress: 255.255.255.255
   _port: 5000
   _debugText: {fileID: 1629579716}
 --- !u!4 &1870732097
