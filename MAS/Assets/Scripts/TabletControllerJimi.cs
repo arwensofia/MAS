@@ -10,7 +10,7 @@ using System.Linq.Expressions;
 public class TabletControllerJimi : MonoBehaviour
 {
     [Header("Network Settings")]
-    public string _pcIPAddress = "255.255.255.255"; //10.227.4.197 <- the other ip
+    public string _pcIPAddress = "10.154.155.170"; //10.227.4.197 <- the other ip
     public int _port = 5000;
 
     [Header("UI")]
@@ -23,7 +23,7 @@ public class TabletControllerJimi : MonoBehaviour
     {
         _controls = new SubmarineControllers();
         _udpClient = new UdpClient();
-        _udpClient.EnableBroadcast = true; // Allow tablet to shout to the whole network
+       // _udpClient.EnableBroadcast = true; // Allow tablet to shout to the whole network
     }
 
     private void OnEnable()
@@ -49,7 +49,7 @@ public class TabletControllerJimi : MonoBehaviour
         try
         {
             // Try to send the control data
-            _udpClient.Send(data, data.Length, "255.255.255.255", _port);
+            _udpClient.Send(data, data.Length, _pcIPAddress, _port);
 
             // If successful, update the UI
             if (_debugText != null)
