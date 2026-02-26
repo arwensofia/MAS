@@ -2,20 +2,22 @@ using UnityEngine;
 
 public class InfoBoxTrigger : MonoBehaviour
 {
-    public GameObject TextBox;
+    public GameObject TextBoxFin;
 
     private void Awake()
     {
-        Debug.Log("Script works wooo");
-        TextBox.SetActive(false);
+        TextBoxFin.SetActive(false);
     }
 
 
     public void OnTriggerEnter(Collider other)
     {
-            Debug.Log("Something entered trigger: " + other.name);
-            TextBox.SetActive(true);
+        TextBoxFin.SetActive(true);
     }
 
+    public void OnTriggerExit(Collider other)
+    {
+        TextBoxFin.SetActive(false);
+    }
 
 }
