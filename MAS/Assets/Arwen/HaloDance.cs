@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Hale : MonoBehaviour
+public class HaloDance : MonoBehaviour
 {
     [Header("Base Size")]
     public float baseSize = 1.2f;
