@@ -16,7 +16,7 @@ public class SubmarineParticleController : MonoBehaviour
     private void FixedUpdate()
     {
         // Convert world velocity to local velocity
-        Vector3 localVelocity = transform.InverseTransformDirection(_rb.velocity);
+        Vector3 localVelocity = transform.InverseTransformDirection(_rb.linearVelocity);
 
         var emission = forwardParticles.emission;
         emission.enabled = localVelocity.z > minForwardSpeed;

@@ -174,8 +174,6 @@ public class SubmarinePOIController : MonoBehaviour
             submarineRoot.SetPositionAndRotation(target.position, target.rotation);
         }
 
-        if (brain != null)
-            brain.ManualUpdate();
     }
 }
 
