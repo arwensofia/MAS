@@ -2417,7 +2417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7111d5a5b3343b4d8af4ed2e223b7d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TabletControllerJimi
-  _pcIPAddress: 255.255.255.255
+  _pcIPAddress: 10.214.209.170
   _port: 5000
   _debugText: {fileID: 1629579716}
 --- !u!4 &1870732097
