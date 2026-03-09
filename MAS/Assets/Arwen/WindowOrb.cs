@@ -1,10 +1,11 @@
-using UnityEngine; 
+using UnityEngine;
+
 public class WindowOrb : MonoBehaviour
 {
-    public Transform viewerCamera;      
-    public LayerMask windowMask;        
+    public Transform viewerCamera;
+    public LayerMask windowMask;
 
-    public float outsideOffset = 0.08f; 
+    public float outsideOffset = 0.08f;
     public float maxRayDistance = 200f;
 
     Vector3 _startLocalPos;
@@ -36,12 +37,9 @@ public class WindowOrb : MonoBehaviour
 
         if (Physics.Raycast(origin, dir, out RaycastHit hit,
                 Mathf.Min(dist, maxRayDistance),
-                windowMask, QueryTriggerInteraction.Ignore))
+                windowMask, QueryTriggerInteraction.Collide))
         {
-            // place halo just OUTSIDE the glass (away from camera)
             Vector3 targetPos = hit.point + dir * outsideOffset;
-
-            // smooth to avoid popping
             transform.position = Vector3.Lerp(transform.position, targetPos, 12f * Time.deltaTime);
         }
         else
