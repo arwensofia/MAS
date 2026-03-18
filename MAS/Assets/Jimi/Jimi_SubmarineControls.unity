@@ -421,7 +421,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UDPReciever
   _port: 5000
+  _sendRate: 0.1
   _debugtext: {fileID: 0}
+  _submarineTransform: {fileID: 0}
 --- !u!1 &92853984
 GameObject:
   m_ObjectHideFlags: 0
@@ -4146,6 +4148,10 @@ PrefabInstance:
       propertyPath: _debugtext
       value: 
       objectReference: {fileID: 1495338478}
+    - target: {fileID: 5757208456291977557, guid: d0598946ec949d44c8e0b89213d85a40, type: 3}
+      propertyPath: _submarineTransform
+      value: 
+      objectReference: {fileID: 2126478551}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4184,7 +4190,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UDPReciever
   _port: 5000
+  _sendRate: 0.1
   _debugtext: {fileID: 0}
+  _submarineTransform: {fileID: 0}
 --- !u!114 &3220512463574085506
 MonoBehaviour:
   m_ObjectHideFlags: 0
