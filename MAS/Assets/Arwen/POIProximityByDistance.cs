@@ -2,7 +2,7 @@ using Unity.Cinemachine;
 using UnityEngine;
 
 public class POIProximityByDistance : MonoBehaviour
-    //for inspector; click and drag
+//for inspector; click and drag
 {
     [SerializeField] private SubmarinePOIController controller;
     [SerializeField] private CinemachineCamera poiVCam;
@@ -10,10 +10,22 @@ public class POIProximityByDistance : MonoBehaviour
     [SerializeField] private Transform submarineTransform;
     [SerializeField] private Transform poiCenter;
 
-    [SerializeField] private float enterRadius = 6f;//distance threshold
-    [SerializeField] private float exitRadius = 7f;//also distance threshold
+    [SerializeField] private float enterRadius = 6f; //distance threshold
+    [SerializeField] private float exitRadius = 7f;  //also distance threshold
+
+    [SerializeField] private GameObject textBoxFin;
+    [SerializeField] private GameObject textBoxEng;
 
     private bool _active;
+
+    private void Awake()
+    {
+        if (textBoxFin != null)
+            textBoxFin.SetActive(false);
+
+        if (textBoxEng != null)
+            textBoxEng.SetActive(false);
+    }
 
     private void OnValidate() //when submarine enters or exits the area, keeps the values valid
     {
@@ -34,11 +46,23 @@ public class POIProximityByDistance : MonoBehaviour
         {
             _active = true;
             controller.Activate(this, poiVCam);
+
+            if (textBoxFin != null)
+                textBoxFin.SetActive(true);
+
+            if (textBoxEng != null)
+                textBoxEng.SetActive(true);
         }
         else if (_active && distance >= exitRadius)
         {
             _active = false;
             controller.Deactivate(this);
+
+            if (textBoxFin != null)
+                textBoxFin.SetActive(false);
+
+            if (textBoxEng != null)
+                textBoxEng.SetActive(false);
         }
     }
 }
