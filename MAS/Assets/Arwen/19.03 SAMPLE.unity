@@ -1303,6 +1303,126 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0236dd3e987e0b84c92233491e7f6e6c, type: 3}
   m_PrefabInstance: {fileID: 1504457407}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &190486422
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DustParticle(Clone)
+  m_Shader: {fileID: 4800000, guid: fc2655527708b470d9b23bfe28ede3e9, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - VL_SHADOWS
+  - VL_SPOT
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3102
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: ed6dc1204147d451d96326c7fedc6727, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cookie2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaClip: 0
+    - _Blend: 0
+    - _BlendOp: 0
+    - _Border: 0.5
+    - _BumpScale: 1
+    - _CameraFadingEnabled: 0
+    - _CameraFarFadeDistance: 2
+    - _CameraNearFadeDistance: 1
+    - _ColorMode: 0
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DistanceFallOff: 0.71
+    - _DistortionBlend: 0.5
+    - _DistortionEnabled: 0
+    - _DistortionStrength: 1
+    - _DistortionStrengthScaled: 0.1
+    - _DstBlend: 0
+    - _EnvironmentReflections: 1
+    - _FlipbookBlending: 0
+    - _FlipbookMode: 0
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _NearClipDistance: 0
+    - _OcclusionStrength: 1
+    - _ParticleDistanceAtten: 100
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SoftParticlesEnabled: 0
+    - _SoftParticlesFarFadeDistance: 1
+    - _SoftParticlesNearFadeDistance: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _WorkflowMode: 1
+    - _ZWrite: 1
+    m_Colors:
+    - _AreaExtents: {r: 0, g: 0, b: 0, a: 1}
+    - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
+    - _BoundsCenter: {r: 80.537506, g: -1.1730976, b: -27.150284, a: 0}
+    - _BoundsExtents: {r: 73.02369, g: 58.827423, b: 60.53891, a: 0}
+    - _CameraFadeParams: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _ConeAxis: {r: -87.5127, g: -38.52619, b: 29.279024, a: 10000}
+    - _ConeTipData: {r: 124.29385, g: 18.09, b: -41.789803, a: 0}
+    - _Cookie2D_Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _Cookie2D_SS: {r: 1, g: 1, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ExtraGeoData: {r: 42.87387, g: -0.00014084508, b: 1.4084507, a: 100}
+    - _FallOff: {r: 1, g: 2, b: 1, a: 0}
+    - _ParticleLightColor: {r: 16, g: 15.76485, b: 7.924528, a: 16}
+    - _ShadowIntensity: {r: 0.7, g: 0.3, b: 0, a: 0}
+    - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
+    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &205440184
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,7 +2193,7 @@ Transform:
   m_GameObject: {fileID: 317442203}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7243851, z: -0, w: 0.6893956}
-  m_LocalPosition: {x: -40.24, y: 22.8, z: 31.73}
+  m_LocalPosition: {x: -40.24, y: 19.06, z: 31.73}
   m_LocalScale: {x: 7.262229, y: 7.262228, z: 7.262229}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2551,7 +2671,7 @@ Transform:
   m_GameObject: {fileID: 378926546}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7243851, z: -0, w: 0.6893956}
-  m_LocalPosition: {x: -78.11, y: 21.62, z: 25.6}
+  m_LocalPosition: {x: -78.11, y: 19.06, z: 25.6}
   m_LocalScale: {x: 7.262229, y: 7.262228, z: 7.262229}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3791,8 +3911,8 @@ MonoBehaviour:
   poiCenter: {fileID: 88811407}
   enterRadius: 6
   exitRadius: 7
-  textBoxFin: {fileID: 1983851374}
-  textBoxEng: {fileID: 732482628}
+  textBoxFin: {fileID: 0}
+  textBoxEng: {fileID: 0}
 --- !u!1 &530682998
 GameObject:
   m_ObjectHideFlags: 0
@@ -3843,8 +3963,8 @@ MonoBehaviour:
   poiCenter: {fileID: 383456618}
   enterRadius: 6
   exitRadius: 7
-  textBoxFin: {fileID: 770794676}
-  textBoxEng: {fileID: 968050503}
+  textBoxFin: {fileID: 0}
+  textBoxEng: {fileID: 0}
 --- !u!1 &531165629
 GameObject:
   m_ObjectHideFlags: 0
@@ -4228,6 +4348,7 @@ GameObject:
   m_Component:
   - component: {fileID: 571531911}
   - component: {fileID: 571531912}
+  - component: {fileID: 571531913}
   m_Layer: 0
   m_Name: POI_03_Proximity
   m_TagString: Untagged
@@ -4268,8 +4389,23 @@ MonoBehaviour:
   poiCenter: {fileID: 1161666730}
   enterRadius: 6
   exitRadius: 7
-  textBoxFin: {fileID: 860886144}
-  textBoxEng: {fileID: 1611607658}
+  textBoxFin: {fileID: 0}
+  textBoxEng: {fileID: 0}
+--- !u!114 &571531913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571531910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03e9e7b85284b4b96075c09803b0b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InfoBoxTrigger
+  TextBoxFin: {fileID: 0}
+  TextBoxEng: {fileID: 0}
+  Highlight: {fileID: 0}
 --- !u!1 &577586238
 GameObject:
   m_ObjectHideFlags: 0
@@ -5401,8 +5537,8 @@ MonoBehaviour:
   poiCenter: {fileID: 853046866}
   enterRadius: 6
   exitRadius: 7
-  textBoxFin: {fileID: 1890111231}
-  textBoxEng: {fileID: 788873922}
+  textBoxFin: {fileID: 0}
+  textBoxEng: {fileID: 0}
 --- !u!1 &760403543
 GameObject:
   m_ObjectHideFlags: 0
@@ -7994,8 +8130,8 @@ MonoBehaviour:
   poiCenter: {fileID: 1703336303}
   enterRadius: 6
   exitRadius: 7
-  textBoxFin: {fileID: 406477992}
-  textBoxEng: {fileID: 1394390596}
+  textBoxFin: {fileID: 0}
+  textBoxEng: {fileID: 0}
 --- !u!1 &1090052153
 GameObject:
   m_ObjectHideFlags: 0
@@ -8659,8 +8795,8 @@ MonoBehaviour:
   poiCenter: {fileID: 817241068}
   enterRadius: 6
   exitRadius: 7
-  textBoxFin: {fileID: 1635550806}
-  textBoxEng: {fileID: 1678977588}
+  textBoxFin: {fileID: 0}
+  textBoxEng: {fileID: 0}
 --- !u!1001 &1216760505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9530,7 +9666,7 @@ Transform:
   m_GameObject: {fileID: 1301681567}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7243851, z: -0, w: 0.6893956}
-  m_LocalPosition: {x: -70.7, y: 22.18, z: 9.86}
+  m_LocalPosition: {x: -70.7, y: 22.97, z: 9.86}
   m_LocalScale: {x: 7.262229, y: 7.262228, z: 7.262229}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9597,7 +9733,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1800553780}
+  - {fileID: 190486422}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19799,7 +19935,7 @@ Transform:
   m_GameObject: {fileID: 1375928248}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7243851, z: -0, w: 0.6893956}
-  m_LocalPosition: {x: -26.47, y: 23.5, z: -5.31}
+  m_LocalPosition: {x: -26.47, y: 22.63, z: -5.31}
   m_LocalScale: {x: 7.262229, y: 7.262228, z: 7.262229}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19807,43 +19943,6 @@ Transform:
   - {fileID: 1767472066}
   m_Father: {fileID: 2053672781}
   m_LocalEulerAnglesHint: {x: 0, y: 170.295, z: 0}
---- !u!84 &1378713299
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 6
-  m_Width: 256
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 90
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_UseDynamicScaleExplicit: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1001 &1392753902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20189,6 +20288,43 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!84 &1419421032
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 90
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &1425781002
 GameObject:
   m_ObjectHideFlags: 0
@@ -20239,8 +20375,8 @@ MonoBehaviour:
   poiCenter: {fileID: 1839911687}
   enterRadius: 6
   exitRadius: 7
-  textBoxFin: {fileID: 783100092}
-  textBoxEng: {fileID: 670765539}
+  textBoxFin: {fileID: 0}
+  textBoxEng: {fileID: 0}
 --- !u!4 &1431818468 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0236dd3e987e0b84c92233491e7f6e6c, type: 3}
@@ -25383,6 +25519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1496057988}
   - component: {fileID: 1496057989}
+  - component: {fileID: 1496057990}
   m_Layer: 0
   m_Name: POI_04_Proximity
   m_TagString: Untagged
@@ -25423,8 +25560,23 @@ MonoBehaviour:
   poiCenter: {fileID: 1707733689}
   enterRadius: 6
   exitRadius: 7
-  textBoxFin: {fileID: 1829382189}
-  textBoxEng: {fileID: 1671398079}
+  textBoxFin: {fileID: 0}
+  textBoxEng: {fileID: 0}
+--- !u!114 &1496057990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496057987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03e9e7b85284b4b96075c09803b0b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InfoBoxTrigger
+  TextBoxFin: {fileID: 0}
+  TextBoxEng: {fileID: 0}
+  Highlight: {fileID: 0}
 --- !u!1001 &1504457407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25559,8 +25711,8 @@ MonoBehaviour:
   poiCenter: {fileID: 205440185}
   enterRadius: 6
   exitRadius: 7
-  textBoxFin: {fileID: 152771649}
-  textBoxEng: {fileID: 347083213}
+  textBoxFin: {fileID: 0}
+  textBoxEng: {fileID: 0}
 --- !u!114 &1553733817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25801,7 +25953,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadowTexture:
-        m_Texture: {fileID: 1378713299}
+        m_Texture: {fileID: 1419421032}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TranslucencyTexture:
@@ -25843,7 +25995,7 @@ Material:
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShadowIntensity: {r: 0.7, g: 0.3, b: 0, a: 0}
     - _ToLightDir: {r: 0.875127, g: 0.38526192, b: -0.29279023, a: 0}
-    - _WindDirection: {r: 0.8317268, g: 0.8317268, b: 0, a: 63.6575}
+    - _WindDirection: {r: 1.538175, g: 1.538175, b: 0, a: 208.27747}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!1 &1590079489
@@ -26109,7 +26261,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967293
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 1378713299}
+  m_TargetTexture: {fileID: 1419421032}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
@@ -27840,8 +27992,8 @@ MonoBehaviour:
   poiCenter: {fileID: 153188545}
   enterRadius: 6
   exitRadius: 7
-  textBoxFin: {fileID: 925848900}
-  textBoxEng: {fileID: 812368862}
+  textBoxFin: {fileID: 0}
+  textBoxEng: {fileID: 0}
 --- !u!1 &1771033666
 GameObject:
   m_ObjectHideFlags: 0
@@ -28227,126 +28379,6 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
---- !u!21 &1800553780
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: DustParticle(Clone)
-  m_Shader: {fileID: 4800000, guid: fc2655527708b470d9b23bfe28ede3e9, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - VL_SHADOWS
-  - VL_SPOT
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3102
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: ed6dc1204147d451d96326c7fedc6727, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Cookie2D:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _AlphaClip: 0
-    - _Blend: 0
-    - _BlendOp: 0
-    - _Border: 0.5
-    - _BumpScale: 1
-    - _CameraFadingEnabled: 0
-    - _CameraFarFadeDistance: 2
-    - _CameraNearFadeDistance: 1
-    - _ColorMode: 0
-    - _Cull: 2
-    - _Cutoff: 0.5
-    - _DistanceFallOff: 0.71
-    - _DistortionBlend: 0.5
-    - _DistortionEnabled: 0
-    - _DistortionStrength: 1
-    - _DistortionStrengthScaled: 0.1
-    - _DstBlend: 0
-    - _EnvironmentReflections: 1
-    - _FlipbookBlending: 0
-    - _FlipbookMode: 0
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
-    - _Metallic: 0
-    - _Mode: 0
-    - _NearClipDistance: 0
-    - _OcclusionStrength: 1
-    - _ParticleDistanceAtten: 100
-    - _QueueOffset: 0
-    - _ReceiveShadows: 1
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SoftParticlesEnabled: 0
-    - _SoftParticlesFarFadeDistance: 1
-    - _SoftParticlesNearFadeDistance: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _Surface: 0
-    - _WorkflowMode: 1
-    - _ZWrite: 1
-    m_Colors:
-    - _AreaExtents: {r: 0, g: 0, b: 0, a: 1}
-    - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
-    - _BoundsCenter: {r: 80.537506, g: -1.1730976, b: -27.150284, a: 0}
-    - _BoundsExtents: {r: 73.02369, g: 58.827423, b: 60.53891, a: 0}
-    - _CameraFadeParams: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    - _ConeAxis: {r: -87.5127, g: -38.52619, b: 29.279024, a: 10000}
-    - _ConeTipData: {r: 124.29385, g: 18.09, b: -41.789803, a: 0}
-    - _Cookie2D_Offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Cookie2D_SS: {r: 1, g: 1, b: 0, a: 0}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ExtraGeoData: {r: 42.87387, g: -0.00014084508, b: 1.4084507, a: 100}
-    - _FallOff: {r: 1, g: 2, b: 1, a: 0}
-    - _ParticleLightColor: {r: 16, g: 15.76485, b: 7.924528, a: 16}
-    - _ShadowIntensity: {r: 0.7, g: 0.3, b: 0, a: 0}
-    - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &1829382189
 GameObject:
   m_ObjectHideFlags: 0
@@ -29035,7 +29067,7 @@ Transform:
   m_GameObject: {fileID: 1861435603}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7243851, z: -0, w: 0.6893956}
-  m_LocalPosition: {x: 53.16, y: 23.7, z: -31.8}
+  m_LocalPosition: {x: 53.16, y: 20, z: -31.8}
   m_LocalScale: {x: 7.262229, y: 7.262228, z: 7.262229}
   m_ConstrainProportionsScale: 0
   m_Children:
