@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using TMPro;
@@ -15,9 +16,12 @@ public class TabletControllerJimi : MonoBehaviour
 
     [Header("UI")]
     public TextMeshProUGUI _debugText; // drag the TabletDebugText here
+    public RectTransform _playerIcon; // The submarine icon here
+    public float _mapscaleMultiplier = 1; // To adjust if the icon moves too fast
 
     private SubmarineControllers _controls;
     private UdpClient _udpClient;
+    private Vector2 _moveInput;
 
     private void Awake()
     {
@@ -39,6 +43,7 @@ public class TabletControllerJimi : MonoBehaviour
 
     private void Update()
     {
+        // SEND control input to the PC
         Vector2 moveInput = _controls.Player.Move.ReadValue<Vector2>();
 
         //moveInput = _controls.Player.Move.ReadValue<Vector2>();
@@ -63,6 +68,32 @@ public class TabletControllerJimi : MonoBehaviour
             if (_debugText != null)
             {
                 _debugText.text = $"Error:\n{e.Message}";
+            }
+        }
+
+        // RECIEVE minimap position from the PC
+        while (_udpClient.Available > 0)
+        {
+            IPEndPoint serverEnd = new IPEndPoint(IPAddress.Any, 0);
+            byte[] recieveBytes = _udpClient.Receive(ref serverEnd);
+            string mapData = Encoding.UTF8.GetString(recieveBytes);
+
+            string[] parts = mapData.Split(',');
+
+            // If we got X, Z and Rotation successfully
+            if (parts.Length == 3 &&
+                float.TryParse(parts[0], out float posX) &&
+                float.TryParse(parts[1], out float posZ) &&
+                float.TryParse(parts[2], out float rotY))
+            {
+                if (_playerIcon != null)
+                {
+                    // Map the 3D World X/Z to the 2D UI X/Y
+                    _playerIcon.anchoredPosition = new Vector2(posX * _mapscaleMultiplier, posZ * _mapscaleMultiplier);
+
+                    // Rotate the icon (negative because 2D UI rotation is inverted from 3D Y-axis)
+                    _playerIcon.localRotation = Quaternion.Euler(0, 0, -rotY);
+                }
             }
         }
         
