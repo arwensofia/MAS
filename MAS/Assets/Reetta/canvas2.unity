@@ -611,14 +611,14 @@ RectTransform:
   m_Children:
   - {fileID: 331689638}
   - {fileID: 2108168874}
+  - {fileID: 1646850327}
+  - {fileID: 1629579715}
+  - {fileID: 1869005034}
   - {fileID: 1886133018}
   - {fileID: 1234810799}
   - {fileID: 397740445}
   - {fileID: 2044275156}
   - {fileID: 598453174}
-  - {fileID: 1646850327}
-  - {fileID: 1629579715}
-  - {fileID: 1869005034}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2645,9 +2645,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7111d5a5b3343b4d8af4ed2e223b7d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TabletControllerJimi
-  _pcIPAddress: 10.214.209.170
+  _pcIPAddress: 10.154.73.170
   _port: 5000
   _debugText: {fileID: 1629579716}
+  _playerIcon: {fileID: 1869005034}
+  _mapscaleMultiplier: 15
 --- !u!4 &1870732097
 Transform:
   m_ObjectHideFlags: 0
