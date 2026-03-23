@@ -3,20 +3,15 @@ using UnityEngine;
 public class SubmarineSound : MonoBehaviour
 {
     public AudioSource audioSource;
-    public float speedThreshold = 0.1f;
-
-    private Rigidbody rb;
-
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
 
     void Update()
     {
-        float speed = rb.linearVelocity.magnitude;
+        float moveInput = Input.GetAxis("Vertical");   // W / S
+        float turnInput = Input.GetAxis("Horizontal"); // A / D
 
-        if (speed > speedThreshold)
+        bool isMoving = Mathf.Abs(moveInput) > 0.01f || Mathf.Abs(turnInput) > 0.01f;
+
+        if (isMoving)
         {
             if (!audioSource.isPlaying)
             {
